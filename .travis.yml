@@ -3,13 +3,12 @@ services:
   - docker
 
 before_install:
-  - docker build -t Dotkeyz/docker-react -f Dockerfile.dev . 
+  - docker build -t dotkeyz/docker-react -f Dockerfile.dev . 
 
 
 script: 
-  - docker run Dotkeyz/docker-react npm run test -- --coverage
+  - docker run dotkeyz/docker-react npm run test -- --coverage
 
 
 
 
-  
