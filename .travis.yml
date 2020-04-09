@@ -7,6 +7,6 @@ before_install:
 
 
 script: 
-  - docker run dotkeyz/docker-react npm run test -- --coverage
+  - docker run -e CI=true dotkeyz/docker-react npm run test
 
 
